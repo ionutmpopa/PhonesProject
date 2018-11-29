@@ -7,14 +7,15 @@ public class Main {
         //Phone phone1 = new Samsung(); // shouldn't compile
         Phone phone = new SamsungGalaxy6("Black", "Plastic", "12345678977");
 
+
         phone.addContacts("1", "George", "Stamate", "0756-454-333");
         phone.addContacts("2", "Claudiu", "Grenea", "0754-441-324");
         phone.listContacts();
         phone.removeContact("George Stamate");
         phone.removeContact("George Cretu");
         phone.listContacts();
-        
-        
+
+
         // send a message to the first contact from the previous listed
         // max number of characters - 100
          phone.sendMessage("0723-121-661", "Ce faci?");
@@ -28,7 +29,7 @@ public class Main {
          phone.call("0754-441-324");
          phone.call("0754-441-320");
         phone.viewHistory();
-        
+
         System.out.println("###############################");
         Phone phone2 = new SamsungGalaxyNote9("White", "Plastic", "32343442634343");
 
@@ -42,6 +43,8 @@ public class Main {
 
         phone2.listMessages("0723-121-661");
         phone2.listMessages("0756-454-333");
+        phone2.listMessages("232-332-154");
+
 
         phone2.call("112-211-133");
         phone2.call("0756-454-333");
